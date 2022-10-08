@@ -2,22 +2,23 @@ package com.driver;
 
 import java.sql.SQLOutput;
 
-class Product {
-    public int product(int x, int y) {
 
-        return x+y;
-    }
-    public int product(int x, int y, int z) {
-        return x+y+z;
-    }
-    public double product(double x, double y) {
-        return x*y;
-    }
-}
 public class Main {
 
+    class Product {
+        public int product(int x, int y) {
 
-    public static void main(String[] args) {
+            return x+y;
+        }
+        public int product(int x, int y, int z) {
+            return x+y+z;
+        }
+        public double product(double x, double y) {
+            return x*y;
+        }
+    }
+
+    public void main(String[] args) {
         Product p = new Product();
         int ans1 = p.product(10, 20);
         int ans2 = p.product(10, 20, 30);
